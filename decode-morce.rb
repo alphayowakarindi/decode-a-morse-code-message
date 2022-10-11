@@ -26,3 +26,10 @@ CODE = {
   'Y' => '-.--',
   'Z' => '--..'
 }.freeze
+
+def decode_char(morce_code)
+   @character = CODE.key(morce_code)
+   puts @character
+end
+
+decode_char ".-"
