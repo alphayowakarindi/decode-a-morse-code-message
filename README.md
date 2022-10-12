@@ -1,6 +1,3 @@
-# decode-a-morse-code-message
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Decode a Morse code message
 
 > Basic logic to decode Morse code message.
