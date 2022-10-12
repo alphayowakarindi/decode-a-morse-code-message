@@ -38,10 +38,20 @@ def decode_entire_word_helper(morce_code)
   @characters.each do |n|
     @join_character += decode_char(n)
   end
-  print @join_character
+  @join_character
 end
 
 def decode_word(entire_word)
   decode_entire_word_helper(entire_word)
 end
-decode_word("-- -.--")
+
+def decode(entire_message)
+  @characterss = entire_message.split('   ')
+  @join_words = ' '
+  @characterss.each do |n|
+    @join_words += decode_entire_word_helper(n) + ' '
+  end
+  print @join_words
+end
+
+decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
