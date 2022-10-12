@@ -32,8 +32,8 @@ def decode_char(morce_code)
    @character
 end
 
-def decode_entire_word_helper(morce_code)
-  @characters = morce_code.split 
+def decode_word(entire_word)
+  @characters = entire_word.split 
   @join_character = ''
   @characters.each do |n|
     @join_character += decode_char(n)
@@ -41,15 +41,11 @@ def decode_entire_word_helper(morce_code)
   @join_character
 end
 
-def decode_word(entire_word)
-  decode_entire_word_helper(entire_word)
-end
-
 def decode(entire_message)
   @characterss = entire_message.split('   ')
   @join_words = ''
   @characterss.each do |n|
-    @join_words += decode_entire_word_helper(n) + ' '
+    @join_words += decode_word(n) + ' '
   end
   @join_words
 end
