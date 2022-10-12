@@ -13,24 +13,17 @@
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+- Ruby
 
-### Setup
 
 ### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
+1. Go to the terminal and ```cd``` into the directory of your preference.
+2. Run `git@github.com:alphayowakarindi/decode-a-morse-code-message.git` to clone the app.
+3. Open the project in a code editor of your choice that is configured to use Ruby. 
+3. Run `ruby decode-morce.rb` to exectue the ruby file
 
 
 ## Authors
