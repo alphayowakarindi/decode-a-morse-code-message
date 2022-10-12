@@ -47,11 +47,14 @@ end
 
 def decode(entire_message)
   @characterss = entire_message.split('   ')
-  @join_words = ' '
+  @join_words = ''
   @characterss.each do |n|
     @join_words += decode_entire_word_helper(n) + ' '
   end
-  print @join_words
+  @join_words
 end
 
-decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
+puts decode_char(".-")
+puts decode_word("-- -.--")
+puts decode("-- -.--   -. .- -- .")
+puts decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
